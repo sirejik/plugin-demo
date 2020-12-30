@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>org.example.plugin-demo</id>
+    <name>Demo plugin</name>
+    <vendor email="sir_ejik@mail.com" url="https://github.com/sirejik">Sergey Lomakin</vendor>
+
+    <description><![CDATA[
+    This is a demo project for working with a plugin for IntelliJ IDEA.<br>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
