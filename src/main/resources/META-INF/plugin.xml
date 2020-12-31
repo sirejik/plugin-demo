@@ -14,6 +14,19 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <action
+                id="StackOverflow.Search.Editor"
+                class="org.example.stackoverflowplugin.SearchAction"
+                text="Search on the Stack Overflow"
+                description="Search on the Stack Overflow">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+        <action
+                id="StackOverflow.Search.Console"
+                class="org.example.stackoverflowplugin.SearchAction"
+                text="Search on the Stack Overflow"
+                description="Search on the Stack Overflow">
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
