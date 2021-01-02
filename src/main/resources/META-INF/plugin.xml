@@ -14,6 +14,17 @@
     </extensions>
 
     <actions>
+        <group id="GithubActionGroup"
+               class="com.intellij.openapi.actionSystem.DefaultActionGroup"
+               popup="true"
+               description="Github Management"
+               text="Github Management"
+               icon="/icons/github.png">
+            <add-to-group group-id="NavBarToolBar" anchor="first"/>
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+            <action class="org.example.github.action.ConfigureSettingsAction"
+                    id="GithubConfigureSettings" text="Go to Github" description="Go to Github"/>
+        </group>
         <action
                 id="StackOverflow.AskQuestion.ToolsMenu"
                 class="org.example.stackoverflowplugin.AskQuestionAction"
