@@ -10,7 +10,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <applicationConfigurable id="githubConfigureSetting" groupId="root" displayName="Demo.Plugin" nonDefaultProject="false"
+                                 instance="org.example.github.config.SettingConfigDialog"/>
     </extensions>
 
     <actions>
@@ -23,7 +24,9 @@
             <add-to-group group-id="NavBarToolBar" anchor="first"/>
             <add-to-group group-id="MainToolBar" anchor="last"/>
             <action class="org.example.github.action.ConfigureSettingsAction"
-                    id="GithubConfigureSettings" text="Go to Github" description="Go to Github"/>
+                    id="GithubConfigureSettings" text="Configure settings" description="Configure settings"/>
+            <action class="org.example.github.action.RedirectToGithubAction"
+                    id="RedirectToGithubAction" text="Go to Github" description="Go to Github"/>
         </group>
         <action
                 id="StackOverflow.AskQuestion.ToolsMenu"
